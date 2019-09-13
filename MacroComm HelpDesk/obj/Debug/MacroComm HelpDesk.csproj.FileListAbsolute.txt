@@ -1,0 +1,31 @@
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\MacroComm HelpDesk.exe.config
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\MacroComm HelpDesk.exe
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\MacroComm HelpDesk.pdb
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\MetroFramework.Design.dll
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\MetroFramework.dll
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm HelpDesk.csprojAssemblyReference.cache
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmLanding.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.Properties.Resources.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm HelpDesk.csproj.GenerateResource.cache
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm HelpDesk.csproj.CoreCompileInputs.cache
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm HelpDesk.csproj.CopyComplete
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm HelpDesk.exe
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm HelpDesk.pdb
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmSignIn.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmDashboard.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\CircularGauge.dll
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\CircularProgressBar.dll
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\WinFormAnimation.dll
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmFaultLog.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmFaultLogOther.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmViewLog.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmRegistration.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmListUser.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\EntityFramework.dll
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\EntityFramework.xml
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmUserProfile.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.ViewProfile.resources
+C:\Users\nhlon\source\repos\MacroComm HelpDesk\MacroComm HelpDesk\obj\Debug\MacroComm_HelpDesk.frmForgotPassword.resources

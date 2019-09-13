@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MacrocommModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tblLogFault">
+    <Key>
+      <PropertyRef Name="Ref_No" />
+    </Key>
+    <Property Name="Ref_No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Log_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Consumer_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Comment" Type="varchar" MaxLength="100" />
+    <Property Name="LogID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblLogOther">
+    <Key>
+      <PropertyRef Name="Refer_No" />
+    </Key>
+    <Property Name="Refer_No" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fault_Type" Type="varchar" MaxLength="50" />
+    <Property Name="ConsumerType" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="100" />
+    <Property Name="Comment" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tblRegistration">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="Surname" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile" Type="varchar" MaxLength="10" />
+    <Property Name="Password" Type="nchar" MaxLength="10" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="images" Type="image" />
+    <Property Name="UserRole" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblViewLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateOpened" Type="datetime" />
+    <Property Name="Source" Type="varchar" MaxLength="50" />
+    <Property Name="Acc_No" Type="int" />
+    <Property Name="Ref_No" Type="int" />
+    <Property Name="Fault_Type" Type="varchar" MaxLength="50" />
+    <Property Name="Comment" Type="varchar" MaxLength="255" />
+    <Property Name="Consumer_Status" Type="varchar" MaxLength="50" />
+    <Property Name="Report" Type="varchar" MaxLength="50" />
+    <Property Name="DateClosed" Type="datetime" />
+    <Property Name="Tech_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Log_Status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="MacrocommModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLogFault" EntityType="Self.tblLogFault" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLogOther" EntityType="Self.tblLogOther" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRegistration" EntityType="Self.tblRegistration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblViewLog" EntityType="Self.tblViewLog" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MacrocommModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblLogFault">
+    <Key>
+      <PropertyRef Name="Ref_No" />
+    </Key>
+    <Property Name="Ref_No" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Log_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Consumer_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LogID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblLogOther">
+    <Key>
+      <PropertyRef Name="Refer_No" />
+    </Key>
+    <Property Name="Refer_No" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fault_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ConsumerType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblRegistration">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="images" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="UserRole" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblViewLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateOpened" Type="DateTime" Precision="3" />
+    <Property Name="Source" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Acc_No" Type="Int32" />
+    <Property Name="Ref_No" Type="Int32" />
+    <Property Name="Fault_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Consumer_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Report" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateClosed" Type="DateTime" Precision="3" />
+    <Property Name="Tech_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Log_Status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="MacrocommEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="tblLogFaults" EntityType="Self.tblLogFault" />
+    <EntitySet Name="tblLogOthers" EntityType="Self.tblLogOther" />
+    <EntitySet Name="tblRegistrations" EntityType="Self.tblRegistration" />
+    <EntitySet Name="tblViewLogs" EntityType="Self.tblViewLog" />
+  </EntityContainer>
+</Schema>
